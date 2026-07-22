@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-const signupUrl = "https://app.seudominio.com.br/cadastro";
-const loginUrl = "https://app.seudominio.com.br/login";
+const signupUrl = "https://app.simplesaprova.com.br/cadastro";
+const loginUrl = "https://app.simplesaprova.com.br/login";
 
 export default function Header() {
   return (

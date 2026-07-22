@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AnimatedCounter from "./animated-counter";
 
-const signupUrl = "https://app.seudominio.com.br/cadastro";
+const signupUrl = "https://app.simplesaprova.com.br/cadastro";
 
 export default function Hero() {
   return (

@@ -1,4 +1,4 @@
-const signupUrl = "https://app.seudominio.com.br/cadastro";
+const signupUrl = "https://app.simplesaprova.com.br/cadastro";
 
 export default function FinalCTA() {
   return (

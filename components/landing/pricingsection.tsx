@@ -1,6 +1,6 @@
-const signupUrl = "https://app.seudominio.com.br/cadastro";
-const essentialUrl = "https://app.seudominio.com.br/checkout/essencial";
-const proUrl = "https://app.seudominio.com.br/checkout/pro";
+const signupUrl = "https://app.simplesaprova.com.br/cadastro";
+const essentialUrl = "https://app.simplesaprova.com.br/checkout/essencial";
+const proUrl = "https://app.simplesaprova.com.br/checkout/pro";
 
 type Plan = {
   name: string;
