@@ -14,7 +14,7 @@ const navigation = [
 export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md">
-      <div className="mx-auto flex h-[76px] w-full max-w-[1560px] items-center justify-between px-5 sm:px-8 lg:h-[88px] lg:px-12 xl:px-16">
+      <div className="mx-auto flex h-19 w-full max-w-[1560px] items-center justify-between px-5 sm:px-8 lg:h-22 lg:px-12 xl:px-16">
         <a href="#" className="flex shrink-0 items-center gap-3" aria-label="Ir para o início">
           <Image
             src="/images/Logo1.png"
@@ -56,7 +56,7 @@ export default function Header() {
           </a>
           <a
             href={signupUrl}
-            className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#2563eb] px-7 py-3 text-sm font-extrabold !text-white shadow-[0_10px_28px_rgba(37,99,235,0.30)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#1d4ed8] focus:outline-none focus:ring-4 focus:ring-blue-200"
+            className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#2563eb] px-7 py-3 text-sm font-extrabold text-white! shadow-[0_10px_28px_rgba(37,99,235,0.30)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#1d4ed8] focus:outline-none focus:ring-4 focus:ring-blue-200"
           >
             Começar agora
           </a>
