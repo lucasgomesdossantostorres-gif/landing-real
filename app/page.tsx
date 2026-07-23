@@ -12,10 +12,10 @@ import PricingSection from "@/components/landing/pricingsection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
+    <div className="min-h-screen overflow-x-hidden bg-slate-50 text-slate-900">
       <Header />
 
-      <main className="pt-24">
+      <main className="pt-[76px] lg:pt-[88px]">
         <Hero />
         <PainSection />
         <HowItWorks />
@@ -23,7 +23,7 @@ export default function Home() {
         <MethodSection />
         <PricingSection />
         <FeaturesSection />
-         <FinalCTA />
+        <FinalCTA />
         <FAQSection />
       </main>
 

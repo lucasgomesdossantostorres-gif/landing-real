@@ -3,64 +3,64 @@ import Image from "next/image";
 const signupUrl = "https://app.simplesaprova.com.br/cadastro";
 const loginUrl = "https://app.simplesaprova.com.br/login";
 
+const navigation = [
+  { label: "Como funciona", href: "#como-funciona" },
+  { label: "Sistema", href: "#sistema" },
+  { label: "Metodologia", href: "#metodologia" },
+  { label: "Planos", href: "#planos" },
+  { label: "Dúvidas", href: "#faq" },
+];
+
 export default function Header() {
   return (
-    <header className="flex items-center justify-between">
-      <a href="#" className="flex items-center gap-3">
-        <Image
-          src="/images/Logo1.png"
-          alt="Logo da plataforma"
-          width={44}
-          height={44}
-          className="h-11 w-11 object-contain"
-          priority
-        />
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md">
+      <div className="mx-auto flex h-[76px] w-full max-w-[1560px] items-center justify-between px-5 sm:px-8 lg:h-[88px] lg:px-12 xl:px-16">
+        <a href="#" className="flex shrink-0 items-center gap-3" aria-label="Ir para o início">
+          <Image
+            src="/images/Logo1.png"
+            alt="Simples Aprova.AI"
+            width={64}
+            height={64}
+            className="h-12 w-12 object-contain sm:h-14 sm:w-14"
+            priority
+          />
 
-        <div>
-          <p className="text-sm font-semibold text-slate-900">
-            Simples Aprova.IA
-          </p>
+          <div className="leading-tight">
+            <p className="text-base font-bold tracking-[-0.02em] text-slate-950 sm:text-lg">
+              Simples Aprova.AI
+            </p>
+            <p className="mt-0.5 hidden text-xs font-medium text-slate-500 sm:block">
+              Correção por IA para concursos
+            </p>
+          </div>
+        </a>
 
-          <p className="text-xs text-slate-500">
-            Correção por IA para concursos
-          </p>
+        <nav className="hidden items-center gap-7 lg:flex xl:gap-10" aria-label="Navegação principal">
+          {navigation.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="text-[15px] font-semibold text-slate-700 transition hover:text-indigo-600"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        <div className="flex shrink-0 items-center gap-2.5 sm:gap-3">
+          <a
+            href={loginUrl}
+            className="hidden min-h-11 items-center justify-center rounded-xl border border-slate-300 bg-white px-5 text-sm font-bold text-slate-700 transition hover:border-indigo-300 hover:text-indigo-700 sm:inline-flex"
+          >
+            Entrar
+          </a>
+          <a
+            href={signupUrl}
+            className="inline-flex min-h-11 items-center justify-center rounded-xl bg-indigo-600 px-4 text-sm font-bold text-white shadow-[0_8px_24px_rgba(79,70,229,0.25)] transition hover:-translate-y-0.5 hover:bg-indigo-700 sm:px-6"
+          >
+            Começar agora
+          </a>
         </div>
-      </a>
-
-      <nav className="hidden items-center gap-8 md:flex">
-        <a href="#como-funciona" className="text-sm font-medium text-slate-600 hover:text-slate-900">
-          Como funciona
-        </a>
-        <a href="#sistema" className="text-sm font-medium text-slate-600 hover:text-slate-900">
-          Sistema
-        </a>
-        <a href="#metodologia" className="text-sm font-medium text-slate-600 hover:text-slate-900">
-          Metodologia
-        </a>
-        <a
-          href="#planos"
-          className="text-sm font-medium text-slate-600 hover:text-slate-900"
-        >
-          Planos
-        </a>
-        <a href="#faq" className="text-sm font-medium text-slate-600 hover:text-slate-900">
-          Dúvidas
-        </a>
-      </nav>
-
-      <div className="flex items-center gap-3">
-        <a
-          href={loginUrl}
-          className="hidden rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 sm:inline-flex"
-        >
-          Entrar
-        </a>
-        <a
-          href={signupUrl}
-          className="rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-indigo-700"
-        >
-          Começar agora
-        </a>
       </div>
     </header>
   );
