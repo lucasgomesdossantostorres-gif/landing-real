@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://simplesaprova.com.br"),
 
   title: {
-    default: "Simples Aprova.AI | Correção de Redações para Concursos",
-    template: "%s | Simples Aprova.AI",
-  },
+  default: "Correção de Redação para Concursos | Simples Aprova.AI",
+  template: "%s | Simples Aprova.AI",
+},
 
-  description:
-    "Treine redações discursivas para concursos com feedback detalhado por inteligência artificial, análise de conteúdo, linguagem e estimativa de nota.",
+description:
+  "Corrija redações e respostas discursivas para concursos com feedback detalhado por inteligência artificial. Treine para provas Cebraspe e acompanhe sua evolução.",
 
   alternates: {
     canonical: "/",
