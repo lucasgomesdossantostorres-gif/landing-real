@@ -34,7 +34,7 @@ export default function Hero() {
             <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <a
                 href={signupUrl}
-                className="inline-flex min-h-14 w-full items-center justify-center rounded-2xl bg-indigo-600 px-7 text-base font-bold text-white shadow-[0_14px_34px_rgba(79,70,229,0.30)] transition hover:-translate-y-0.5 hover:bg-indigo-700 sm:w-auto"
+                className="inline-flex min-h-16 w-full items-center justify-center rounded-2xl bg-[#2563eb] px-9 py-4 text-base font-extrabold !text-white shadow-[0_16px_38px_rgba(37,99,235,0.32)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#1d4ed8] focus:outline-none focus:ring-4 focus:ring-blue-200 sm:w-auto"
               >
                 Analisar minha primeira resposta
               </a>
@@ -97,7 +97,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="flex min-h-28 items-center gap-5 rounded-[28px] bg-gradient-to-r from-indigo-600 to-violet-600 p-7 shadow-lg shadow-indigo-600/20">
+          <div className="flex min-h-28 items-center gap-5 rounded-[28px] bg-linear-to-r from-indigo-600 to-violet-600 p-7 shadow-lg shadow-indigo-600/20">
   <p className="shrink-0 text-3xl font-extrabold tracking-tight text-white">
     <AnimatedCounter end={1032} />
   </p>

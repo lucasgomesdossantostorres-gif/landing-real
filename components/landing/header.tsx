@@ -56,7 +56,7 @@ export default function Header() {
           </a>
           <a
             href={signupUrl}
-            className="inline-flex min-h-11 items-center justify-center rounded-xl bg-indigo-600 px-4 text-sm font-bold text-white shadow-[0_8px_24px_rgba(79,70,229,0.25)] transition hover:-translate-y-0.5 hover:bg-indigo-700 sm:px-6"
+            className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#2563eb] px-7 py-3 text-sm font-extrabold !text-white shadow-[0_10px_28px_rgba(37,99,235,0.30)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#1d4ed8] focus:outline-none focus:ring-4 focus:ring-blue-200"
           >
             Começar agora
           </a>
