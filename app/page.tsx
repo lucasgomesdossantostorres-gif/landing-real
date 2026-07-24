@@ -4,11 +4,11 @@ import PainSection from "@/components/landing/painsection";
 import HowItWorks from "@/components/landing/howitworks";
 import SystemShowcase from "@/components/landing/systemshowcase";
 import MethodSection from "@/components/landing/methodsection";
-import FeaturesSection from "@/components/landing/featuressection";
-import FAQSection from "@/components/landing/faqsection";
-import FinalCTA from "@/components/landing/finalcta";
-import Footer from "@/components/landing/footer";
 import PricingSection from "@/components/landing/pricingsection";
+import FeaturesSection from "@/components/landing/featuressection";
+import FinalCTA from "@/components/landing/finalcta";
+import FAQSection from "@/components/landing/faqsection";
+import Footer from "@/components/landing/footer";
 
 export default function Home() {
   return (

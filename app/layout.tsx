@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://simplesaprova.com.br"),
 
   title: {
-  default: "Correção de Redação para Concursos | Simples Aprova.AI",
-  template: "%s | Simples Aprova.AI",
-},
+    default: "Correção de Redação para Concursos | Simples Aprova.AI",
+    template: "%s | Simples Aprova.AI",
+  },
 
-description:
-  "Corrija redações e respostas discursivas para concursos com feedback detalhado por inteligência artificial. Treine para provas Cebraspe e acompanhe sua evolução.",
+  description:
+    "Corrija redações e respostas discursivas para concursos com feedback detalhado por inteligência artificial. Treine para provas Cebraspe e acompanhe sua evolução.",
 
   alternates: {
     canonical: "/",
@@ -21,6 +21,17 @@ description:
     follow: true,
   },
 
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+        sizes: "any",
+      },
+    ],
+    shortcut: "/favicon.ico",
+  },
+
   openGraph: {
     title: "Simples Aprova.AI",
     description:
@@ -29,6 +40,13 @@ description:
     siteName: "Simples Aprova.AI",
     locale: "pt_BR",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    title: "Simples Aprova.AI",
+    description:
+      "Correção de redações para concursos com feedback detalhado por inteligência artificial.",
   },
 };
 
