@@ -15,7 +15,7 @@ export default function Home() {
     <div className="min-h-screen overflow-x-hidden bg-slate-50 text-slate-900">
       <Header />
 
-      <main className="pt-[76px] lg:pt-[88px]">
+      <main className="pt-19 lg:pt-22">
         <Hero />
         <PainSection />
         <HowItWorks />
