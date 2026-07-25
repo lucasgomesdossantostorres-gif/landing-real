@@ -35,11 +35,11 @@ const plans: Plan[] = [
     badge: "Mais escolhido",
     description:
       "Para quem está estudando com frequência e precisa de acompanhamento contínuo da evolução.",
-    price: "R$ 124,73",
+    price: "R$ 29,70",
     period: "/mês",
     features: [
-      "50 correções discursivas por mês",
-      "30 mensagens por dia no Mentor IA",
+      "Ilimitadas correções discursivas",
+      "10 mensagens por dia no Mentor IA",
       "Feedback detalhado de conteúdo",
       "Estimativa educacional de pontuação",
       "Acompanhamento de desempenho",
@@ -58,8 +58,8 @@ const plans: Plan[] = [
     price: "R$ 172,46",
     period: "/mês",
     features: [
-      "70 correções discursivas por mês",
-      "60 mensagens por dia no Mentor IA",
+      "Ilimitadas correções discursivas",
+      "25 mensagens por dia no Mentor IA",
       "Feedback detalhado de conteúdo",
       "Estimativa educacional de pontuação",
       "Acompanhamento de desempenho",
@@ -77,7 +77,7 @@ function CheckIcon({ highlighted = false }: { highlighted?: boolean }) {
     <span
       className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${
         highlighted
-          ? "bg-indigo-100 text-indigo-700"
+          ? "bg-blue-100 text-[#2563eb]"
           : "bg-emerald-50 text-emerald-600"
       }`}
       aria-hidden="true"
@@ -104,7 +104,7 @@ export default function PricingSection() {
     <section id="planos" className="px-6 py-20 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-600">
+          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2563eb]">
             Planos
           </span>
 
@@ -117,7 +117,7 @@ export default function PricingSection() {
             rotina de estudos.
           </p>
 
-          <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-700">
+          <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-[#2563eb]">
             Correções disponíveis atualmente para questões discursivas Cebraspe
           </div>
         </div>
@@ -128,13 +128,13 @@ export default function PricingSection() {
               key={plan.name}
               className={`relative flex h-full flex-col rounded-[28px] border p-7 transition duration-300 hover:-translate-y-1 md:p-8 ${
                 plan.highlighted
-                  ? "border-indigo-500 bg-white shadow-[0_24px_70px_rgba(79,70,229,0.18)]"
+                  ? "border-[#2563eb] bg-white shadow-[0_24px_70px_rgba(37,99,235,0.18)]"
                   : "border-slate-200 bg-white shadow-sm hover:shadow-xl"
               }`}
             >
               {plan.badge && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex whitespace-nowrap rounded-full bg-indigo-600 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-lg">
+                  <span className="inline-flex whitespace-nowrap rounded-full bg-[#2563eb] px-4 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-lg">
                     {plan.badge}
                   </span>
                 </div>
@@ -187,8 +187,8 @@ export default function PricingSection() {
                   href={plan.buttonUrl}
                   className={`inline-flex w-full items-center justify-center rounded-2xl px-5 py-4 text-sm font-semibold transition ${
                     plan.highlighted
-                      ? "bg-indigo-600 text-white shadow-lg hover:bg-indigo-700"
-                      : "border border-slate-300 bg-white text-slate-900 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700"
+                      ? "bg-[#2563eb] text-white shadow-[0_10px_28px_rgba(37,99,235,0.30)] hover:bg-[#1d4ed8]"
+                      : "border border-slate-300 bg-white text-slate-900 hover:border-blue-300 hover:bg-blue-50 hover:text-[#2563eb]"
                   }`}
                 >
                   {plan.buttonText}
