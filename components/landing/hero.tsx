@@ -24,11 +24,12 @@ export default function Hero() {
             </h1>
 
             <p className="mt-7 max-w-155 text-lg leading-8 text-slate-700 sm:text-xl sm:leading-9">
-              Envie sua resposta discursiva e receba, em até 2 minutos, uma análise completa sobre conteúdo, estrutura, argumentação e atendimento ao enunciado.
+              Sua discursiva merece mais do que uma correção genérica. Receba feedback especializado nos critérios do Cebraspe.
+
             </p>
 
             <p className="mt-4 max-w-150 text-base leading-7 text-slate-600 sm:text-lg">
-              Entenda seus pontos fortes, identifique o que precisa melhorar e treine com direção para a próxima prova.
+              Envie sua resposta discursiva e receba, em até 2 minutos, uma análise completa sobre conteúdo, estrutura, argumentação e atendimento ao enunciado.
             </p>
 
             <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
