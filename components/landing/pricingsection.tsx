@@ -40,6 +40,7 @@ const plans: Plan[] = [
     features: [
       "Ilimitadas correções discursivas",
       "10 mensagens por dia no Mentor IA",
+      "+900 questões discursivas de concursos",
       "Feedback detalhado de conteúdo",
       "Estimativa educacional de pontuação",
       "Acompanhamento de desempenho",
@@ -60,6 +61,7 @@ const plans: Plan[] = [
     features: [
       "Ilimitadas correções discursivas",
       "25 mensagens por dia no Mentor IA",
+      "+900 questões discursivas de concursos",
       "Feedback detalhado de conteúdo",
       "Estimativa educacional de pontuação",
       "Acompanhamento de desempenho",
